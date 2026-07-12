@@ -1,134 +1,74 @@
-# Casos de Uso
+# Casos de Uso — Frente Funcional
 
-> **Observação:** Todos os atores herdam as funcionalidades do ator **Usuário**.
+Este diretório reúne os casos de uso funcionais do sistema de gerenciamento de condomínios, estruturados em formato textual compatível com a abordagem do RUP. Cada documento descreve objetivo, atores, pré-condições, pós-condições, fluxo principal, variações, exceções e regras de negócio relevantes para o processo modelado.
 
-## Usuário
+### Administração do sistema
 
-### Conta
+- UC-001 - Manter Dados Pessoais
+- UC-002 - Alterar Senha
+- UC-003 - Manter Condomínios
+- UC-004 - Manter Gestores dos Condomínios
 
-- Manter dados pessoais
-- Alterar senha
+### Gestão do condomínio
 
----
+- UC-005 - Manter Agrupamentos de Unidades Habitacionais
+- UC-006 - Manter Unidades Habitacionais
+- UC-007 - Manter Moradores
+- UC-008 - Manter Equipe
+- UC-009 - Consultar Veículos Cadastrados
+- UC-010 - Manter Comunicados
+- UC-011 - Manter Ocorrências
+- UC-012 - Atribuir Responsável por Ocorrências
+- UC-013 - Manter Manutenções
+- UC-014 - Atribuir Manutencista
+- UC-015 - Manter Áreas Comuns
+- UC-016 - Aprovar Reservas
 
-## Administrador do Sistema
+### Serviços ao morador
 
-### Gestão da Plataforma
+- UC-017 - Manter Membros da Unidade Habitacional
+- UC-018 - Manter Veículos da Unidade Habitacional
+- UC-019 - Manter Visitantes
+- UC-020 - Aprovar Visitantes
+- UC-021 - Gerenciar Autorizações Permanentes
+- UC-022 - Consultar Histórico de Acessos
+- UC-023 - Solicitar Reserva de Área Comum
+- UC-024 - Abrir Ocorrências
+- UC-025 - Acompanhar Ocorrências
+- UC-026 - Consultar Comunicados
+- UC-027 - Consultar Encomendas
 
-- Manter condomínios
-- Manter gestores dos condomínios
+### Operação de portaria
 
-### Administração
+- UC-028 - Registrar Entrada e Saída de Moradores
+- UC-029 - Registrar Entrada e Saída de Visitantes
+- UC-030 - Registrar Entrada e Saída de Veículos
+- UC-031 - Registrar Recebimento de Encomendas
+- UC-032 - Registrar Entrega de Encomendas
 
-- Executar todas as funcionalidades disponíveis para os demais atores
+### Operação de segurança
 
----
+- UC-033 - Atender Ocorrências
+- UC-034 - Atualizar Andamento das Ocorrências
+- UC-035 - Encerrar Ocorrências
 
-## Gestor do Condomínio
+### Operação de manutenção
 
-### Estrutura do Condomínio
+- UC-036 - Atender Manutenções
+- UC-037 - Atualizar Andamento das Manutenções
+- UC-038 - Encerrar Manutenções
 
-- Manter agrupamentos de unidades habitacionais
-- Manter unidades habitacionais
-- Manter moradores
-- Manter equipe
-- Consultar veículos cadastrados
+## Padrão adotado nos documentos
 
-### Comunicados
+- Objetivo do caso de uso.
+- Atores envolvidos.
+- Interessados e interesses.
+- Gatilho de início.
+- Pré-condições e pós-condições.
+- Fluxo principal, fluxos alternativos e fluxos de exceção.
+- Regras de negócio, requisitos especiais e casos de uso relacionados.
 
-- Manter comunicados
+## Observações
 
-### Ocorrências
-
-- Manter ocorrências
-- Atribuir responsável por ocorrências
-
-### Manutenções
-
-- Manter manutenções
-- Atribuir manutencista
-
-### Áreas Comuns
-
-- Manter áreas comuns
-- Aprovar reservas
-
----
-
-## Morador
-
-### Unidade Habitacional
-
-- Manter membros da unidade habitacional
-- Manter veículos da unidade habitacional
-
-### Controle de Visitantes
-
-- Manter visitantes
-- Aprovar visitantes
-- Gerenciar autorizações permanentes
-- Consultar histórico de acessos
-
-### Áreas Comuns
-
-- Solicitar reserva de área comum
-
-### Ocorrências
-
-- Abrir ocorrências
-- Acompanhar ocorrências
-
-### Comunicados
-
-- Consultar comunicados
-
-### Encomendas
-
-- Consultar encomendas
-
----
-
-## Porteiro
-
-### Controle de Acesso
-
-- Registrar entrada e saída de moradores
-- Registrar entrada e saída de visitantes
-- Registrar entrada e saída de veículos
-
-### Encomendas
-
-- Registrar recebimento de encomendas
-- Registrar entrega de encomendas
-
----
-
-## Segurança
-
-### Ocorrências
-
-- Atender ocorrências
-- Atualizar andamento das ocorrências
-- Encerrar ocorrências
-
----
-
-## Manutencista
-
-### Manutenções
-
-- Atender manutenções
-- Atualizar andamento das manutenções
-- Encerrar manutenções
-
----
-
-# Premissas do Sistema
-
-- O Administrador do Sistema possui acesso irrestrito à plataforma e pode executar todas as funcionalidades disponíveis aos demais atores.
-- O Gestor do Condomínio é responsável pela administração do condomínio sob sua gestão.
-- O Gestor cadastra as unidades habitacionais e o primeiro morador (titular) de cada unidade.
-- Após o cadastro inicial, o morador titular torna-se responsável por manter os membros da unidade habitacional, os veículos vinculados à unidade e os visitantes autorizados.
-- O Porteiro é responsável pelo controle operacional de acessos e encomendas.
-- O Segurança atua apenas sobre ocorrências atribuídas a ele.
-- O Manutencista atua apenas sobre manutenções atribuídas a ele.
+- Os casos de uso podem ser refinados futuramente com protótipos de interface, regras complementares e rastreabilidade para requisitos funcionais e não funcionais.
+- A numeração foi preservada para facilitar rastreamento entre os artefatos da disciplina e do projeto.
